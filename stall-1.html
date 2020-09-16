@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Uniocde -->
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA Compatible" content="IE=edge" />
+    <![endif]-->
+    <!-- First Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Pgae Description -->
+    <meta name="description" content="Auticare" />
+    <!-- Page Kewords -->
+    <meta name="keywords" content="Auticare" />
+    <!-- Site Author -->
+    <meta name="author" content="Auticare" />
+    <!-- Title -->
+    <title>DEMO</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css" type="text/css" />
+    <link rel="stylesheet" href="fonts/fontawesome/font-awesome.min.css" />
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="city" src="img/gettyimages-1271661844-594x594.jpg" />
+      </a-assets>
+      <!-- 360-degree image. -->
+      <a-sky
+        id="image-360"
+        radius="10"
+        src="#city"
+        animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
+        animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"
+      ></a-sky>
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+    </a-scene>
+    <a href="stall-1.html" class="float" id="f1">
+        <i class="fa fa-home my-float"></i>
+        <span class="tooltiptext">stall 1</span>
+      </a>
+      <a href="stall-2.html" class="float" id="f2">
+        <i class="fa fa-home my-float"></i>
+        <span class="tooltiptext">stall 2</span>
+      </a>
+      <a href="stall-3.html" class="float" id="f3">
+        <i class="fa fa-home my-float"></i>
+        <span class="tooltiptext">stall 3</span>
+      </a>
+      <a href="stall-4.html" class="float" id="f4">
+        <i class="fa fa-home my-float"></i>
+        <span class="tooltiptext">stall 4</span>
+      </a>
+      <a href="profile.html" class="float-user" id="f5">
+        <i class="fa fa-plus my-float"></i>
+        <span class="tooltiptext">profile</span>
+      </a>
+      <a href="dashboard.html" class="float-user" id="f6">
+        <i class="fa fa-minus my-float"></i>
+        <span class="tooltiptext">dashboard</span>
+      </a>
+      <a href="index.html" class="float-user" id="f7">
+        <i class="fa fa-home my-float"></i>
+        <span class="tooltiptext">home</span>
+      </a>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
